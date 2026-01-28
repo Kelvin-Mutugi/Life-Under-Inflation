@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Inter, system-ui, Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #f7fafc;
+  color: #0f172a;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.controls {
+  margin: 12px 0;
+}
+.button {
+  background: #0369a1;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.card {
+  background: white;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(2, 6, 23, 0.06);
+  margin-top: 12px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 6px 8px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+.small {
+  font-size: 12px;
+  color: #475569;
+}
+
+.value-card {
+  background: #f8fafc;
+  padding: 8px;
+  border-radius: 6px;
+  margin-top: 6px;
+  text-align: center;
+}
+
+.forecast-row td {
+  vertical-align: middle;
+}
+.forecast-bar {
+  height: 10px;
+  background: #e6eef6;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.forecast-bar > div {
+  height: 100%;
+  background: #0369a1;
+  border-radius: 6px;
+  transition: width 300ms ease;
+}
+
+/* Chart helpers */
+.chart-wrap {
+  position: relative;
+}
+.tooltip {
+  position: absolute;
+  background: rgba(15, 23, 42, 0.96);
+  color: white;
+  padding: 8px 10px;
+  border-radius: 6px;
+  z-index: 10;
+  min-width: 140px;
+  font-size: 13px;
+}
+.tooltip .small {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.legend {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.legend .small {
+  margin-left: 6px;
+}
