@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Inflation Survival AI</title>
+  <style>
+    body {
+      background: #0f172a;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    canvas {
+      background: #111827;
+      border: 1px solid #333;
+      margin-top: 20px;
+    }
+    .stats {
+      margin-top: 15px;
+      font-size: 18px;
+    }
+    button {
+      padding: 10px 20px;
+      margin-top: 15px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Inflation Survival AI</h1>
+<button onclick="startSimulation()">Start Simulation</button>
+
+<div class="stats" id="stats"></div>
+
+<canvas id="chart" width="800" height="400"></canvas>
+
+<script src="script.js"></script>
+
+</body>
+</html>
