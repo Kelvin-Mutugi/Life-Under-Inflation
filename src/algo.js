@@ -10,7 +10,7 @@
 
 
 /***********************
- * 1️⃣ INITIAL STATE
+ * 1️INITIAL STATE
  ***********************/
 
 let state = {
@@ -28,7 +28,7 @@ const MONTE_CARLO_RUNS = 100;
 
 
 /***********************
- * 2️⃣ RANDOM NORMAL GENERATOR
+ * 2️RANDOM NORMAL GENERATOR
  * Box-Muller Transform
  ***********************/
 function randomNormal(mean = 0, std = 1) {
@@ -40,7 +40,7 @@ function randomNormal(mean = 0, std = 1) {
 
 
 /***********************
- * 3️⃣ ECONOMY UPDATE
+ * 3 ECONOMY UPDATE
  ***********************/
 function updateEconomy(simState) {
 
@@ -63,7 +63,7 @@ function updateEconomy(simState) {
 
 
 /***********************
- * 4️⃣ ACTION DEFINITIONS
+ * 4️ACTION DEFINITIONS
  ***********************/
 function applyAction(simState, action) {
 
@@ -97,7 +97,7 @@ function applyAction(simState, action) {
 
 
 /***********************
- * 5️⃣ MONTE CARLO FORECAST
+ * 5️MONTE CARLO FORECAST
  ***********************/
 function forecastSurvival(currentState, action) {
 
@@ -132,7 +132,7 @@ function forecastSurvival(currentState, action) {
 
 
 /***********************
- * 6️⃣ UTILITY FUNCTION
+ * 6️UTILITY FUNCTION
  ***********************/
 function calculateUtility(result) {
 
@@ -145,7 +145,7 @@ function calculateUtility(result) {
 
 
 /***********************
- * 7️⃣ AI DECISION ENGINE
+ * 7️AI DECISION ENGINE
  ***********************/
 function chooseBestAction(currentState) {
 
@@ -181,7 +181,7 @@ function chooseBestAction(currentState) {
 
 
 /***********************
- * 8️⃣ MAIN SIMULATION LOOP
+ * 8️MAIN SIMULATION LOOP
  ***********************/
 for (let month = 1; month <= MONTHS_TO_SIMULATE; month++) {
 
